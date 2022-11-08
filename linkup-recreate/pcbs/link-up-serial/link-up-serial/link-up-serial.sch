@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -13,12 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 8175 1150 1050 550 
-U 636FE579
-F0 "Sheet636FE578" 50
-F1 "pp.sch" 50
-$EndSheet
 Text GLabel 1475 1775 0    50   Input ~ 0
 SD1
 Text GLabel 1475 1675 0    50   Input ~ 0
@@ -380,9 +374,9 @@ Connection ~ 8500 2725
 Wire Wire Line
 	8500 2725 8975 2725
 Text GLabel 4075 3375 2    50   Input ~ 0
-RXD_X
+RXD_Y
 Text GLabel 3000 4900 2    50   Input ~ 0
-RXD_X
+RXD_Y
 Text GLabel 2100 4800 0    50   Input ~ 0
 GREEN
 Text GLabel 2100 5000 0    50   Input ~ 0
@@ -399,4 +393,10 @@ Text GLabel 3925 6000 0    50   Input ~ 0
 CTS_X
 Text GLabel 3000 4600 2    50   Input ~ 0
 CTS_Y
+Text GLabel 3000 5100 2    50   Input ~ 0
+RXD_X
+Text GLabel 3925 6500 0    50   Input ~ 0
+RXD_X
+Text GLabel 5025 6500 2    50   Input ~ 0
+RED
 $EndSCHEMATC
