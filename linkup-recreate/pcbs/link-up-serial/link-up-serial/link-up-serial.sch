@@ -289,8 +289,6 @@ Wire Wire Line
 	6300 1150 6300 1225
 Wire Wire Line
 	4625 1150 5775 1150
-Wire Wire Line
-	4425 6375 4150 6375
 $Comp
 L power:GND #PWR?
 U 1 1 63725A73
@@ -329,7 +327,7 @@ Wire Wire Line
 	2100 5600 1875 5600
 Wire Wire Line
 	1875 5600 1875 5750
-Text GLabel 4150 6375 0    50   Input ~ 0
+Text GLabel 3600 6375 0    50   Input ~ 0
 SVCC
 Text GLabel 3925 5000 2    50   Input ~ 0
 SVCC
@@ -717,4 +715,13 @@ Wire Wire Line
 Connection ~ 3650 6875
 Wire Wire Line
 	3650 6875 3650 6925
+Wire Wire Line
+	3600 6375 3950 6375
+Wire Wire Line
+	4425 6675 3950 6675
+Wire Wire Line
+	3950 6675 3950 6375
+Connection ~ 3950 6375
+Wire Wire Line
+	3950 6375 4425 6375
 $EndSCHEMATC
