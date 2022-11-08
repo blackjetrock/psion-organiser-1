@@ -373,7 +373,7 @@ Wire Wire Line
 	8500 2725 8975 2725
 Text GLabel 4075 3375 2    50   Input ~ 0
 RXD_Y
-Text GLabel 3000 4900 2    50   Input ~ 0
+Text GLabel 4650 4900 2    50   Input ~ 0
 RXD_Y
 Text GLabel 2100 4800 0    50   Input ~ 0
 GREEN
@@ -406,7 +406,7 @@ L Device:R_Small R?
 U 1 1 637324DD
 P 3675 4275
 F 0 "R?" H 3734 4321 50  0000 L CNN
-F 1 "R_Small" H 3734 4230 50  0000 L CNN
+F 1 "10k" H 3734 4230 50  0000 L CNN
 F 2 "" H 3675 4275 50  0001 C CNN
 F 3 "~" H 3675 4275 50  0001 C CNN
 	1    3675 4275
@@ -560,7 +560,7 @@ L Device:R_Small R?
 U 1 1 637491DA
 P 2200 3500
 F 0 "R?" H 2259 3546 50  0000 L CNN
-F 1 "R_Small" H 2259 3455 50  0000 L CNN
+F 1 "47k" H 2259 3455 50  0000 L CNN
 F 2 "" H 2200 3500 50  0001 C CNN
 F 3 "~" H 2200 3500 50  0001 C CNN
 	1    2200 3500
@@ -584,4 +584,31 @@ Wire Wire Line
 Connection ~ 2200 3275
 Wire Wire Line
 	2200 3275 3075 3275
+Text GLabel 2950 3375 0    50   Input ~ 0
+SD4
+Wire Wire Line
+	2950 3375 3075 3375
+$Comp
+L Device:R_Small R?
+U 1 1 6374F71A
+P 4400 4650
+F 0 "R?" H 4459 4696 50  0000 L CNN
+F 1 "10k" H 4459 4605 50  0000 L CNN
+F 2 "" H 4400 4650 50  0001 C CNN
+F 3 "~" H 4400 4650 50  0001 C CNN
+	1    4400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4900 4400 4900
+Wire Wire Line
+	4400 4750 4400 4900
+Connection ~ 4400 4900
+Wire Wire Line
+	4400 4900 3000 4900
+Wire Wire Line
+	3675 4000 4400 4000
+Wire Wire Line
+	4400 4000 4400 4550
+Connection ~ 3675 4000
 $EndSCHEMATC
