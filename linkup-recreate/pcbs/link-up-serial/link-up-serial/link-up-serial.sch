@@ -333,10 +333,8 @@ Wire Wire Line
 	1875 5100 1875 5250
 Text GLabel 3650 5900 0    50   Input ~ 0
 SVCC
-Text GLabel 3225 4500 2    50   Input ~ 0
+Text GLabel 3925 4500 2    50   Input ~ 0
 SVCC
-Wire Wire Line
-	3000 4500 3225 4500
 Text GLabel 2100 4500 0    50   Input ~ 0
 BLUE
 Text Notes 8775 4000 0    50   ~ 0
@@ -391,7 +389,7 @@ Text GLabel 3000 4800 2    50   Input ~ 0
 CTS_X
 Text GLabel 3925 6000 0    50   Input ~ 0
 CTS_X
-Text GLabel 3000 4600 2    50   Input ~ 0
+Text GLabel 3925 4600 2    50   Input ~ 0
 CTS_Y
 Text GLabel 3000 5100 2    50   Input ~ 0
 RXD_X
@@ -399,4 +397,30 @@ Text GLabel 3925 6500 0    50   Input ~ 0
 RXD_X
 Text GLabel 5025 6500 2    50   Input ~ 0
 RED
+Wire Wire Line
+	3000 4600 3675 4600
+Wire Wire Line
+	3000 4500 3925 4500
+$Comp
+L Device:R_Small R?
+U 1 1 637324DD
+P 3675 4275
+F 0 "R?" H 3734 4321 50  0000 L CNN
+F 1 "R_Small" H 3734 4230 50  0000 L CNN
+F 2 "" H 3675 4275 50  0001 C CNN
+F 3 "~" H 3675 4275 50  0001 C CNN
+	1    3675 4275
+	1    0    0    -1  
+$EndComp
+Text GLabel 3575 4000 0    50   Input ~ 0
+SVCC
+Wire Wire Line
+	3575 4000 3675 4000
+Wire Wire Line
+	3675 4000 3675 4175
+Wire Wire Line
+	3675 4375 3675 4600
+Connection ~ 3675 4600
+Wire Wire Line
+	3675 4600 3925 4600
 $EndSCHEMATC
