@@ -679,4 +679,24 @@ Text GLabel 6075 3500 2    50   Input ~ 0
 SD2
 Wire Wire Line
 	6075 3500 5925 3500
+$Comp
+L power:GND #PWR?
+U 1 1 6377FAA5
+P 4525 3800
+F 0 "#PWR?" H 4525 3550 50  0001 C CNN
+F 1 "GND" H 4530 3627 50  0000 C CNN
+F 2 "" H 4525 3800 50  0001 C CNN
+F 3 "" H 4525 3800 50  0001 C CNN
+	1    4525 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 3300 4525 3300
+Wire Wire Line
+	4525 3300 4525 3400
+Wire Wire Line
+	4925 3400 4525 3400
+Connection ~ 4525 3400
+Wire Wire Line
+	4525 3400 4525 3800
 $EndSCHEMATC

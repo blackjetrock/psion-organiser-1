@@ -139,12 +139,10 @@ Wire Wire Line
 Connection ~ 2700 3125
 Wire Wire Line
 	2700 3125 3075 3125
-Text GLabel 2750 2425 2    50   Input ~ 0
+Text GLabel 3075 2425 2    50   Input ~ 0
 SVCC
 Wire Wire Line
 	2700 2675 2700 2425
-Wire Wire Line
-	2700 2425 2750 2425
 Text GLabel 7875 2425 0    50   Input ~ 0
 BROWN
 Text GLabel 7875 2525 0    50   Input ~ 0
@@ -307,7 +305,7 @@ $EndComp
 Wire Wire Line
 	4425 6775 3650 6775
 Wire Wire Line
-	3650 6775 3650 6925
+	3650 6775 3650 6875
 Text GLabel 5800 6475 2    50   Input ~ 0
 BROWN
 Wire Wire Line
@@ -537,7 +535,7 @@ $EndComp
 Wire Wire Line
 	2550 3650 2550 3475
 Wire Wire Line
-	2550 3475 3075 3475
+	2550 3475 2975 3475
 $Comp
 L power:GND #PWR?
 U 1 1 63745654
@@ -699,4 +697,24 @@ Wire Wire Line
 Connection ~ 4525 3400
 Wire Wire Line
 	4525 3400 4525 3800
+Wire Wire Line
+	2700 2425 2975 2425
+Wire Wire Line
+	2975 2425 2975 3475
+Connection ~ 2975 2425
+Wire Wire Line
+	2975 2425 3075 2425
+Connection ~ 2975 3475
+Wire Wire Line
+	2975 3475 3075 3475
+Wire Wire Line
+	4425 6575 3650 6575
+Wire Wire Line
+	3650 6575 3650 6775
+Connection ~ 3650 6775
+Wire Wire Line
+	4425 6875 3650 6875
+Connection ~ 3650 6875
+Wire Wire Line
+	3650 6875 3650 6925
 $EndSCHEMATC
